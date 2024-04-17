@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dash"
+    tools:context=".fragementes.CrudFarmsFragment"
+    >
+
+    <Button
+        android:id="@+id/btn_return"
+        android:textColor="@color/white"
+        android:layout_margin="10dp"
+        android:padding="20dp"
+        android:drawableLeft="@drawable/ic_baseline_keyboard_return_24"
+        android:backgroundTint="#EDC5E1A4"
+        android:textColorHint="@color/white"
+        android:layout_width="60dp"
+        android:drawablePadding="20dp"
+        android:layout_height="60dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="40dp"
+                android:textColor="@color/white"
+                android:text="Farms"
+                android:layout_centerHorizontal="true"
+                android:textStyle="bold"
+                android:textSize="30sp"/>
+
+            <EditText
+                android:id="@+id/edit_farm_nom"
+                android:hint="Nom"
+                android:textColor="@color/white"
+                android:layout_margin="10dp"
+                android:padding="20dp"
+                android:background="#30ffffff"
+                android:layout_width="match_parent"
+                android:drawablePadding="20dp"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/edit_farm_localisation"
+                android:hint="Localisation"
+                android:textColor="@color/white"
+                android:layout_margin="10dp"
+                android:padding="20dp"
+                android:background="#30ffffff"
+                android:layout_width="match_parent"
+                android:drawablePadding="20dp"
+                android:layout_height="wrap_content"/>
+
+
+            <LinearLayout
+                android:id="@+id/lin2"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/btn_addFarm"
+                    android:textColor="@color/white"
+                    android:layout_margin="10dp"
+                    android:padding="20dp"
+                    android:drawableLeft="@drawable/ic_baseline_save_alt_24"
+                    android:backgroundTint="#ED9E976C"
+                    android:textColorHint="@color/white"
+                    android:layout_width="60dp"
+                    android:drawablePadding="20dp"
+                    android:layout_height="60dp"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

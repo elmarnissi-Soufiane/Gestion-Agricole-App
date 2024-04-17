@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="10dp"
+    android:layout_margin="8dp">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:id="@+id/txt_item_farm_nom"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:background="@color/clr1"
+                android:padding="15dp" />
+
+            <TextView
+                android:id="@+id/txt_item_farm_localisation"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/txt_item_farm_nom"
+                android:background="@color/clr2"
+                android:padding="15dp" />
+
+            <TextView
+                android:id="@+id/txt_item_farm_prod_nom"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_item_farm_nom"
+                android:background="@color/clr3"
+                android:padding="15dp" />
+
+            <LinearLayout
+                android:layout_below="@+id/txt_item_farm_localisation"
+                android:layout_width="wrap_content"
+                android:layout_toRightOf="@id/txt_item_farm_nom"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_deleteFarm"
+                    android:layout_width="60dp"
+                    android:layout_height="55dp"
+                    android:backgroundTint="#b01ddb"
+                    android:drawableLeft="@drawable/ic_baseline_delete_24"
+                    android:drawablePadding="20dp"
+                    android:padding="15dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white" />
+
+                <Button
+                    android:id="@+id/btn_editFarm"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="10dp"
+                    android:padding="15dp"
+                    android:drawableLeft="@drawable/ic_baseline_edit_note_24"
+                    android:backgroundTint="#db1d6e"
+                    android:textColorHint="@color/white"
+                    android:layout_width="60dp"
+                    android:drawablePadding="20dp"
+                    android:layout_height="55dp"/>
+
+                <Button
+                    android:id="@+id/btn_listTerrain"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="10dp"
+                    android:padding="15dp"
+                    android:drawableLeft="@drawable/ic_baseline_format_list_bulleted_24"
+                    android:backgroundTint="#6df7a0"
+                    android:textColorHint="@color/white"
+                    android:layout_width="60dp"
+                    android:drawablePadding="20dp"
+                    android:layout_height="55dp"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

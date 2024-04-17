@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="10dp"
+    android:layout_margin="8dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:id="@+id/txt_item_terrain_type"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:background="@color/clr1"
+            android:padding="15dp" />
+
+        <TextView
+            android:id="@+id/txt_item_terrain_surphase"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/txt_item_terrain_type"
+            android:background="@color/clr2"
+            android:padding="15dp" />
+
+        <TextView
+            android:id="@+id/txt_item_terrain_quantite"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_item_terrain_type"
+            android:background="@color/clr3"
+            android:padding="15dp" />
+
+        <Button
+            android:id="@+id/btn_deleteTerrain"
+            android:layout_width="60dp"
+            android:layout_height="55dp"
+            android:layout_below="@+id/txt_item_terrain_surphase"
+            android:layout_marginStart="3dp"
+            android:layout_marginEnd="3dp"
+            android:layout_toRightOf="@+id/txt_item_terrain_quantite"
+            android:backgroundTint="#b01ddb"
+            android:drawableLeft="@drawable/ic_baseline_delete_24"
+            android:padding="20dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
+
+        <Button
+            android:id="@+id/btn_editTerrain"
+            android:layout_toRightOf="@id/btn_deleteTerrain"
+            android:textColor="@color/white"
+            android:layout_marginLeft="25dp"
+            android:layout_below="@+id/txt_item_terrain_surphase"
+            android:padding="20dp"
+            android:drawableLeft="@drawable/ic_baseline_edit_note_24"
+            android:backgroundTint="#db1d6e"
+            android:textColorHint="@color/white"
+            android:layout_width="60dp"
+            android:layout_height="55dp"/>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
